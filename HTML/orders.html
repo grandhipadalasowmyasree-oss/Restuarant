@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Order Details</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1 style="text-align:center;">Order Details</h1>
+</header>
+
+<form onsubmit="placeOrder(event)" style="max-width:400px; margin:auto;">
+
+  <h3>Step 1: Enter Your Name</h3>
+  <input type="text" id="name" placeholder="Name" required>
+
+  <h3>Step 2: Enter Your Address</h3>
+  <input type="text" id="address" placeholder="Address" required>
+
+  <h3>Step 3: Enter Your Phone Number</h3>
+  <input type="text" id="phone" placeholder="Phone Number" required>
+
+  <h3>Step 4: Confirm Your Order</h3>
+  <button type="submit">Confirm Order</button>
+
+</form>
+
+<!-- Thank You Message -->
+<div id="thankYouMessage" style="display:none; text-align:center; margin-top:30px;">
+  <h2>🎉 Thank You for Ordering! 🍽️</h2>
+  <p>😊 Your order has been placed successfully.</p>
+  <p>🚚 We will deliver your delicious food soon!</p>
+  <p>❤️ Thank you for choosing us!</p>
+</div>
+
+<hr style="margin:40px 0;">
+
+<h2 style="text-align:center;">Order History</h2>
+<ul id="orderHistory" style="max-width:400px; margin:auto;"></ul>
+
+<script src="script.js"></script>
+</body>
+</html>
+
